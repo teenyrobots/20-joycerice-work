@@ -1,52 +1,90 @@
-/* styles for my css demo */
+@import url("https://use.typekit.net/kxl8kiy.css");
+
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: pink;
-/*    background-image: url("assets/1.jpg");*/
-    color: deeppink;
-/*    text-align: center;*/
+    border-left: 1rem black solid;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: davis-sans, sans-serif; /* TK ADD A SECONDARY DEFAULT—ROBOTO? */
+
 }
 
-img {
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 1rem auto;
-    background-color: green;
+.index1 {
+    background: url("assets/_frontpage/ecosystem.jpg") fixed center;
+    background-size: cover;
+    min-height: 60vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 }
 
-h1 {
-    color: rgba(50,50,124,.5);
+.index1 h1, .index1 h2 {
+    font-family: davis, serif;
+    margin: 2rem;
 }
 
-a:link {
-    color: seagreen;
+.index1 h1 {
+    font-size: 4.5rem;
+    font-style: italic;
+    line-height: 6.5rem;
+}
+
+.index1 h2 {
+    font-weight: lighter;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+/* https://css-tricks.com/multi-line-padded-text/ */
+.indexTextBG {
+  display: inline;
+  background: white;
+  box-shadow: -.5rem 0 0 white, .5rem 0 0 white, -1rem .5rem 0 black;
+}
+
+.index2 {
+    background: white;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 2rem;
+}
+
+nav li {
     display: inline-block;
+    font-size: 2rem;
+    margin-right: 20%;
+    margin-top: 2rem;
 }
 
-a:visited {
-    color: darkgreen;
-}
-
-a:hover {
-    background-color: green;
-    color: white;
+a:link, a:visited {
     text-decoration: none;
+    border-bottom: .25rem solid #FAC412;
+    color: black;
+    font-weight: 300;
 }
 
-a:active {
-    background-color: deeppink;
+a:hover, a:active {
+    background: black;
     color: white;
-    text-decoration: line-through;
+    padding: .25rem;
+    border: none;
 }
 
-.specialBorder {
-    border: red solid 1rem;
+footer {
+    margin: 2rem;
 }
-
-
-
-
-
-
-
