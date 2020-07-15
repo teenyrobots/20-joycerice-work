@@ -105,6 +105,7 @@ nav a.active {
     color: white;
     padding: .15rem .25rem;
     border: none;
+    box-shadow: -.25rem 0 0 black, .25rem 0 0 black, -.5rem .25rem 0 #FAC412;
 }
 
 
@@ -185,6 +186,7 @@ nav a.active {
 }
 
 
+
 /* -------------------- ABOUT ---------------------- */
 .about {
     display: flex;
@@ -219,3 +221,19 @@ nav a.active {
  .bio ul li {
      margin: .5rem 0;
  }
+
+
+
+/* -------------------- WORK ---------------------- */
+.work {
+    margin: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.workTile {
+    width: 300px;
+    background:#FAC412;
+    padding: .5rem;
+}
