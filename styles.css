@@ -51,6 +51,7 @@ a:hover, a:active {
     color: white;
     padding: .15rem .25rem;
     border: none;
+    font-style: italic;
 }
 
 img {
@@ -186,12 +187,16 @@ nav a.active {
 
 .indexNav {
     padding: 0;
-    margin: 2rem;
+    margin: 2.5rem;
 }
 
 .indexNav li {
     font-size: 2rem;
     margin: 0 6rem 0 0;
+}
+
+.indexNav li a:hover {
+    padding: .25rem .5rem;
 }
 
 
