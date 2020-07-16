@@ -15,26 +15,35 @@ body {
     font-family: davis-sans, sans-serif; /* TK ADD A SECONDARY DEFAULT—ROBOTO? */
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: davis;
 }
 
-h2 {
+h2, h3 {
     font-weight: 300;
 }
 
-span.textBG {
+span.whiteblack-textBG {
   display: inline;
   background: white;
   box-shadow: -.5rem 0 0 white, .5rem 0 0 white, -1rem .5rem 0 black;
 } /* https://css-tricks.com/multi-line-padded-text/ */
+
+span.white-textBG {
+    display: inline;
+    background: white;
+    box-shadow: -.5rem 0 0 white, .5rem 0 0 white;
+}
+
+span.yellowUnderline {
+    border-bottom: .15rem solid #FAC412;
+}
 
 a:link, a:visited {
     text-decoration: none;
     border-bottom: .15rem solid #FAC412;
     color: black;
     font-weight: 300;
-
 }
 
 a:hover, a:active {
@@ -105,7 +114,7 @@ nav a.active {
     color: white;
     padding: .15rem .25rem;
     border: none;
-    box-shadow: -.25rem 0 0 black, .25rem 0 0 black, -.5rem .25rem 0 #FAC412;
+    box-shadow: -.25rem 0 0 black, .25rem 0 0 black;
 }
 
 
@@ -136,7 +145,7 @@ nav a.active {
     margin: 0 2rem;
 }
 
-.contentHead .textBG {
+.contentHead .whiteblack-textBG {
     margin-right: .5rem;
 }
 
@@ -229,11 +238,56 @@ nav a.active {
     margin: 2rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.workTile {
-    width: 300px;
-    background:#FAC412;
-    padding: .5rem;
+.work:hover h3 {
+    color: black;
+    font-style: italic;
+}
+
+a.workTile {
+    width: 400px;
+    padding: 0;
+    border: 0;
+    background-color: #FAC412;
+    margin: 1rem;
+}
+
+a.workTile:hover {
+    background-color: black;
+}
+
+a.workTile:hover h2 {
+    background: black;
+    font-style: italic;
+}
+
+a.workTile:hover span.yellowUnderline {
+    border: 0;
+}
+
+.workTile:hover {
+    padding: 0;
+}
+
+.workTile h2 {
+    padding: .5rem 1rem;
+    background: white;
+    font-size: 1.75rem;
+}
+
+.workTile h3 {
+    margin: 0 0 1rem 0;
+    line-height: 2.25rem;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.workTile p {
+    text-transform: uppercase;
+}
+
+.workTile div {
+    padding: 1rem;
 }
