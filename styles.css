@@ -7,7 +7,7 @@ html * {
 }
 
 body {
-    border-left: 1rem black solid;
+    /* border-left: 1rem black solid; */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -295,4 +295,68 @@ a.workTile:hover span.yellowUnderline {
 
 .workTile div {
     padding: 1rem;
+}
+
+
+/* -------------------- PROJECTS ---------------------- */
+.projContent {
+    background: #FAC412;
+    min-height: 100px;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: -.5rem;
+}
+
+.vertical {
+    background: white;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.vertical-flexy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.vertical-flexy div, .vertical-flexy h2 {
+    max-width: 50%;
+}
+
+.vertical-flexy h1 {
+    font-weight: 500;
+    border-bottom: black 1px solid;
+}
+
+.vertical-flexy h2 {
+}
+
+.vertical-flexy p {
+    margin-bottom: 1rem;
+}
+
+.vf-1 {
+    width: 45%;
+    text-align: right;
+}
+
+.vf-2 {
+    width: 50%;
+}
+
+.vf-2 img {
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+#gallery img {
+    border: 1px solid black;
+    margin: 1rem;
+    max-width: 500px;
 }
