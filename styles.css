@@ -300,8 +300,10 @@ a.workTile:hover span.yellowUnderline {
 
 /* -------------------- PROJECTS ---------------------- */
 .mainContent-proj {
-    background: #FAC412;
+    /* background: #FAC412; */
     min-height: 100px;
+    /* border-left: 1rem #FAC412 solid;
+    border-right: 1rem #FAC412 solid; */
 }
 
 .banner {
@@ -312,10 +314,19 @@ a.workTile:hover span.yellowUnderline {
 
 .projectContent {
     width: 95%;
-    max-width: 1200px;
+    max-width: 1000px;
     background: white;
     margin: auto;
     padding: 1rem;
+}
+
+.projectContent h1 {
+    font-weight: 500;
+}
+
+.projectContent hr {
+    margin: 1rem 0 1rem auto;
+    width: 50%;
 }
 
 .projectContent h2 {
@@ -323,10 +334,26 @@ a.workTile:hover span.yellowUnderline {
     font-weight: normal;
 }
 
+.button-link {
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 45% 50%;
-    gap: 3rem 2rem;
+    gap: 3rem 3rem;
+    margin: 3rem;
+    align-items: baseline;
+}
+
+.subtitle h2 {
+    margin-bottom: .75rem;
+}
+
+.subt-detail {
+    font-style: normal;
+    font-weight: 300;
 }
 
 .right-item {
@@ -343,17 +370,15 @@ a.workTile:hover span.yellowUnderline {
 }
 
 .links {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    gap: .5rem;
     align-items: center;
+    align-self: center;
 }
 
 .links img {
     height: 2rem;
-}
-
-.links a {
-    margin: 0 1rem;
 }
 
 .gallery {
@@ -367,11 +392,46 @@ a.workTile:hover span.yellowUnderline {
     margin: .5rem;
 }
 
-.big {
-    position: absolute;
-    top: 1rem;
-    width: 90%;
-    margin: 0;
+.big-bg {
+    position: fixed;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    opacity: .5;
+    display: none;
+}
+
+img.big {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(25%);
+    width: auto;
+    height: auto;
+    max-width: 96vw;
+    max-height: 96vh;
+}
+
+.navigate {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.navigate div {
+    max-width: 200px;
+}
+
+.navigate * {
+    margin: 1rem 0;
+}
+
+.navigate a {
+    font-size: 1.75rem;
+    font-family: davis;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2.75rem;
 }
 
 
