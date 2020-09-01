@@ -29,6 +29,14 @@ span.whiteblack-textBG {
   box-shadow: -.5rem 0 0 white, .5rem 0 0 white, -1rem .5rem 0 black;
 } /* https://css-tricks.com/multi-line-padded-text/ */
 
+span.yellowblack-textBG {
+  display: inline;
+  color: white;
+  padding: .5rem;
+  background: black;
+  box-shadow: -.5rem 0 0 black, .5rem 0 0 black, -1rem .5rem 0 #FAC412;
+} /* https://css-tricks.com/multi-line-padded-text/ */
+
 span.white-textBG {
     display: inline;
     background: white;
@@ -314,19 +322,25 @@ a.workTile:hover span.yellowUnderline {
 
 .projectContent {
     width: 95%;
-    max-width: 1000px;
+    max-width: 800px;
     background: white;
     margin: auto;
     padding: 1rem;
 }
 
 .projectContent h1 {
-    font-weight: 500;
+    font-weight: 300;
+    text-align: center;
+    margin: 2rem auto;
+    padding: .5rem;
+    color: white;
+    background: black;
 }
 
 .projectContent hr {
-    margin: 1rem 0 1rem auto;
-    width: 50%;
+    margin: 0 0 1rem auto;
+    padding-top: 0;
+    width: 100%;
 }
 
 .projectContent h2 {
@@ -337,23 +351,27 @@ a.workTile:hover span.yellowUnderline {
 .button-link {
     text-transform: uppercase;
     font-size: .75rem;
+
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 45% 50%;
+    grid-template-columns: 18% 73%;
     gap: 3rem 3rem;
-    margin: 3rem;
+    margin: 3rem auto;
     align-items: baseline;
+    justify-content: center;
 }
 
 .subtitle h2 {
-    margin-bottom: .75rem;
-}
-
-.subt-detail {
     font-style: normal;
     font-weight: 300;
+}
+
+.subtitle {
+    border: 1px solid black;
+    padding: 1rem;
+    /* align-self: end; */
 }
 
 .right-item {
@@ -384,6 +402,7 @@ a.workTile:hover span.yellowUnderline {
 .gallery {
     width: 100%;
     column-count: 2;
+    margin-top: 5rem;
 }
 
 .gallery img {
