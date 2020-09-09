@@ -47,19 +47,29 @@ span.yellowUnderline {
     border-bottom: .15rem solid #FAC412;
 }
 
-a:link, a:visited {
-    text-decoration: none;
+span.whiteboxblack-textBG {
+    margin: .5rem;
+    display: inline;
+    background: white;
+    border: 1px black solid;
+    padding: .5rem;
+    box-shadow: 0 0 0 white, 0 0 0 white, -.5rem .5rem 0 black;
+}
+
+a {
     border-bottom: .15rem solid #FAC412;
-    color: black;
+    text-decoration: none;
     font-weight: 300;
+}
+
+a:link, a:visited {
+    color: black;
 }
 
 a:hover, a:active {
     background: black;
     color: white;
-    padding: .15rem .25rem;
     border: none;
-    font-style: italic;
 }
 
 img {
@@ -344,15 +354,24 @@ a.workTile:hover span.yellowUnderline {
     border-top: 1px solid black;
 }
 
-.projectContent h2 {
+.subtitle h2 {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.projectContent h3 {
     font-style: italic;
-    font-weight: normal;
+    font-weight: 300;
+    /* background-color: black;
+    color: white; */
+    padding: .25rem;
+    margin-top: 0;
+    border-top: 1px solid black;
 }
 
 .button-link {
     text-transform: uppercase;
     font-size: .75rem;
-
 }
 
 .grid {
@@ -360,18 +379,18 @@ a.workTile:hover span.yellowUnderline {
     grid-template-columns: 18% 73%;
     gap: 3rem 3rem;
     margin: 3rem auto;
-    align-items: baseline;
+    align-items: start;
     justify-content: space-between;
 }
 
 .jumpToGallery {
     border-top: 1px solid black;
-    padding-top: 1rem;
-}
-
-.subtitle h2 {
-    font-style: normal;
-    font-weight: 300;
+    padding: 1rem 0;
+    /* border-bottom: 1px solid black; */
+    /* align-self: stretch; */
+    /* display: flex;
+    flex-flow: column;
+    justify-content: space-between; */
 }
 
 .subtitle {
@@ -381,7 +400,7 @@ a.workTile:hover span.yellowUnderline {
 }
 
 .right-item {
-    text-align: right;
+    /* text-align: right; */
 }
 
 .grafs p {
@@ -391,6 +410,21 @@ a.workTile:hover span.yellowUnderline {
 .grafs ul {
     margin-left: 1rem;
     margin-top: -.5rem;
+}
+
+.inAction {
+    border-bottom: none;
+}
+
+.inAction:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.inAction span:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0 white, 0 0 0 white, -.5rem .5rem 0 #FAC412;
 }
 
 .links {
@@ -405,16 +439,25 @@ a.workTile:hover span.yellowUnderline {
     height: 2rem;
 }
 
+.rule {
+    border-top: 1px black solid;
+}
+
 .gallery {
     width: 100%;
     column-count: 2;
-    margin-top: 5rem;
+    column-gap: .5rem;
+    padding: .5rem;
+    background-color: lightgrey;
 }
 
 .gallery img {
     width: 100%;
+    margin: 0 auto;
+}
+
+.gallery img:hover {
     border: 1px solid black;
-    margin: .5rem;
 }
 
 .big-bg {
@@ -435,6 +478,10 @@ img.big {
     height: auto;
     max-width: 96vw;
     max-height: 96vh;
+}
+
+img.big:hover {
+    border: none;
 }
 
 .navigate {
